@@ -1,9 +1,16 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 
-const InitialScreen = () => {
+const InitialScreen = ({navigation}) => {
     return(
-        <Text>Here Go Initial Screen</Text>
+        <TouchableOpacity 
+        onPress={() => navigation.navigate('OthersScreen')}
+        style={{backgroundColor: '#ff1493', width: 150, height: 50}}
+        >
+
+            <Text>Go To Home Screen</Text>
+
+        </TouchableOpacity>
     )
 }
 
