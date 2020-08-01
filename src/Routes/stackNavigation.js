@@ -2,12 +2,13 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
-import InitialScreen from './Screens/Initial';
-import FormScreen from './Screens/Form';
+import InitialScreen from '../Screens/Initial';
+import FormScreen from '../Screens/Form';
+import OthersScreens from './tabNavigation';
 
-const Routes = () => {
+const TabNavigation = () => {
     return(
         <NavigationContainer>
 
@@ -15,6 +16,7 @@ const Routes = () => {
 
                 <Stack.Screen name="Initial" component={InitialScreen} />
                 <Stack.Screen name="Form" component={FormScreen} />
+                <Stack.Screen name="OthersScreen" component={OthersScreens} />
 
             </Stack.Navigator>
 
@@ -22,4 +24,4 @@ const Routes = () => {
     )
 }
 
-export default Routes;
+export default TabNavigation;
