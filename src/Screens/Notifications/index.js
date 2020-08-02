@@ -3,8 +3,8 @@ import {Text} from 'react-native';
 
 const ClothesScreen = () => {
     return(
-        <Text>Here Go New Clothe Screen</Text>
+        <Text>Here Go Notifications Screen</Text>
     )
 }
 
-export default ClothesScreen; 
+export default ClothesScreen;
