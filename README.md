@@ -33,8 +33,8 @@ A idéia era apenas reproduzir fielmente a interface.
 Ao iniciar o app, o usuário navegará por essas duas primeiras telas iniciais:
 
 <h1 align="center">
-    <img src="https://ik.imagekit.io/ur6xo9m70i/1_6EKT1IYCdj.jpeg" width="250">
-    <img src="https://ik.imagekit.io/ur6xo9m70i/2_wBgtwyeav.jpeg" width="250">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/1_6EKT1IYCdj.jpeg" width="200">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/2_wBgtwyeav.jpeg" width="200">
 </h1>
 
 
