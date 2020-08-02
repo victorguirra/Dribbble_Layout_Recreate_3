@@ -7,12 +7,46 @@ import {Container,
         SettingsButton,
         WrapperInfoMessages,
         WelcomeTitle,
-        NameTitle
+        NameTitle,
+        OptionsContainer,
+        Option,
+        OptionImage,
+        OptionTitle,
 } from './styles';
 
 import Avatar from '../../../assets/Images/Avatar/AvatarIcon.png';
 
+import WashingMachine from '../../../assets/Images/Home/WashingMachine.png';
+import ClothesIron from '../../../assets/Images/Home/ClothesIron.png';
+import DryingClothes from '../../../assets/Images/Home/DryingClothes.png'; 
+import Seam from '../../../assets/Images/Home/Seam.png';
+
+
 const HomeScreen = () => {
+
+    const OptionsItems = [
+        {
+            key: String(Math.random()),
+            img: WashingMachine,
+            title: 'Wash & Iron',
+        },
+        {
+            key: String(Math.random()),
+            img: ClothesIron,
+            title: 'Ironing',
+        },
+        {
+            key: String(Math.random()),
+            img: DryingClothes,
+            title: 'Dry Cleaning',
+        },
+        {
+            key: String(Math.random()),
+            img: Seam,
+            title: 'Darning',
+        },
+    ]
+
     return(
         <Container>
 
@@ -36,6 +70,21 @@ const HomeScreen = () => {
 
             </WrapperInfoMessages>
 
+            <OptionsContainer>
+
+                {OptionsItems.map(OptionItem => (
+                    <Option key={OptionItem.key}>
+
+                        <OptionImage source={OptionItem.img} alt={OptionItem.title} />
+
+                        <OptionTitle>{OptionItem.title}</OptionTitle>
+
+                    </Option>
+                ))}
+
+            </OptionsContainer>
+
+            
         </Container>
     )
 }
