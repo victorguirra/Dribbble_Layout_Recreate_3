@@ -37,7 +37,7 @@ Ao iniciar o app, o usuário navegará por essas duas primeiras telas iniciais:
     <img src="https://ik.imagekit.io/ur6xo9m70i/2_wBgtwyeav.jpeg" width="200">
 </h1>
 
-
+Após navegar pelas duas telas iniciais, o usuário será direcionado para a tela principal do app, onde terá a possibilidade de navegar por outras três telas (a ideia do app era de 5 telas, porém no dribbble só estavam disponíveis 3);
 
 <h1 align="center">
     <img src="https://ik.imagekit.io/ur6xo9m70i/3_qwtGo4A34Q.jpeg" width="200">
