@@ -12,7 +12,7 @@ const TabNavigation = () => {
     return(
         <NavigationContainer>
 
-            <Stack.Navigator headerMode="none" initialRouteName="Initial">
+            <Stack.Navigator headerMode="none" initialRouteName="OthersScreens">
 
                 <Stack.Screen name="Initial" component={InitialScreen} />
                 <Stack.Screen name="Form" component={FormScreen} />

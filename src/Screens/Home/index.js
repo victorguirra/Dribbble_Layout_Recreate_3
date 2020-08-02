@@ -1,4 +1,5 @@
 import React from 'react';
+import {StatusBar} from 'expo-status-bar';
 import {MaterialIcons} from '@expo/vector-icons';
 
 import {Container,
@@ -48,44 +49,49 @@ const HomeScreen = () => {
     ]
 
     return(
-        <Container>
+        <>
+            <StatusBar style="dark"/>
 
-            <Header>
+            <Container>
 
-                <AvatarImage source={Avatar} alt="Avatar Image" />
+                <Header>
 
-                <SettingsButton>
+                    <AvatarImage source={Avatar} alt="Avatar Image" />
 
-                    <MaterialIcons name="settings" size={30} color="#0D5C46" />
+                    <SettingsButton>
 
-                </SettingsButton>
+                        <MaterialIcons name="settings" size={30} color="#0D5C46" />
 
-            </Header>
+                    </SettingsButton>
 
-            <WrapperInfoMessages>
+                </Header>
 
-                <WelcomeTitle>Welcome Back</WelcomeTitle>
+                <WrapperInfoMessages>
 
-                <NameTitle>Victor Hugo Guirra</NameTitle>
+                    <WelcomeTitle>Welcome Back</WelcomeTitle>
 
-            </WrapperInfoMessages>
+                    <NameTitle>Victor Hugo Guirra</NameTitle>
 
-            <OptionsContainer>
+                </WrapperInfoMessages>
 
-                {OptionsItems.map(OptionItem => (
-                    <Option key={OptionItem.key}>
+                <OptionsContainer>
 
-                        <OptionImage source={OptionItem.img} alt={OptionItem.title} />
+                    {OptionsItems.map(OptionItem => (
+                        <Option key={OptionItem.key}>
 
-                        <OptionTitle>{OptionItem.title}</OptionTitle>
+                            <OptionImage source={OptionItem.img} alt={OptionItem.title} />
 
-                    </Option>
-                ))}
+                            <OptionTitle>{OptionItem.title}</OptionTitle>
 
-            </OptionsContainer>
+                        </Option>
+                    ))}
 
-            
-        </Container>
+                </OptionsContainer>
+
+                
+            </Container>
+
+        </>
     )
 }
 
