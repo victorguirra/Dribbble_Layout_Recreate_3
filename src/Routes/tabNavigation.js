@@ -23,7 +23,7 @@ const TabNavigation = () => {
                 style:{
                     backgroundColor:'#0D5C46',
                     paddingTop:15,
-                    height:50,
+                    height:55,
                     borderTopLeftRadius:25,
                     borderTopRightRadius:25,
                 },
