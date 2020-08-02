@@ -120,7 +120,7 @@ const ClothesScreen = () => {
 
                                 </OptionButtonAddCounter>
 
-                                <OptionNumberCounter>{counter}</OptionNumberCounter>
+                                <OptionNumberCounter>1</OptionNumberCounter>
 
                                 <OptionButtonDecreaseCounter>
 
